@@ -25,6 +25,11 @@ body {
     /* justify-content: space-around; */
     margin-top: 80px;
     /* margin-left: 50px; */
+    padding: 20px;
+    border-radius: 20px;
+
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
+
 
 }
 .full-name {
@@ -60,6 +65,10 @@ body {
 }
 .about {
     height: 150px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 .abt-head {
     font-size: 20px;
@@ -69,28 +78,56 @@ body {
 .abt-content {
     line-height: 1.5;
 }
-.links.head {
+.links-head {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 .links {
     display: flex;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.3));
+    padding: 20px;
+    border-radius: 20px;
 }
 .link-title-section {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align names/titles to the right */
+}
+
+.link-title {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: right; /* Align text to the right */
+    color: white;
+    text-decoration: none;
+}
+
+.link-title:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly darker background on hover */
 }
 .link-url-section {
     width: 70%;
 }
-.link-url{
+
+.link-url {
     text-decoration: none;
     color: white;
     margin-top: 20px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: right;
+    border-radius: 5px;
+}
 
+.link-url:hover {
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.link-title {
-    margin-top: 20px;
-}
+
 :hover {
     cursor:crosshair;
 }
